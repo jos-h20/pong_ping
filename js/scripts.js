@@ -5,8 +5,12 @@ var output = [];
     if (i % 15 === 0) {
       output.push("ping pong");
     } else {
+    if(i % 5 === 0) {
+      output.push("pong");
+    } else {
       output.push(i);
-    };
+    }
+  }
   };
 console.log(output);
 return output;
