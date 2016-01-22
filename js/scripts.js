@@ -2,9 +2,12 @@ var pingPong = function(num) {
 var output = [];
 
   for(var i = 1; i <= num; i++) {
+    if (i % 15 === 0) {
+      output.push("ping pong");
+    } else {
       output.push(i);
-    }
-
+    };
+  };
 console.log(output);
 return output;
 
