@@ -3,6 +3,7 @@
 <html>
   <head>
     <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
     <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/styles.css" media="screen" title="no title">
     <script src="js/jquery-1.12.0.js"></script>
@@ -11,21 +12,67 @@
     <title>Ping pong</title>
   </head>
   <body>
-    <div class="container">
-      <h1>Ping Pong Game</h1>
-
-      <form id="pong">
-        <div class="form-group">
-          <label for="pong">Enter a number here:</label>
-          <input id="number" type="text">
-        </div>
-
-        <button type="submit" class="btn">Ping Pong!</button>
-      </form>
-
-      <div id="result">
-        <p><span class="output"></span></p>
+    <div class="jumbotron">
+      <div class="container push-spaces">
+          <h1>Ping Pong</h1>
       </div>
+    </div>
+    <div class="container">
+      <div class="col-md-4">
+
+        <div class="panel panel-default">
+          <div class="panel-body">
+
+            <h2 style="color:#d3d3d3;">About Ping Pong</h2>
+            <h3 style="color:#d3d3d3;">Created by:</h3>
+            <p  style="color:#d3d3d3;" class="sidebar">
+              Josh Overly
+            </p>
+            <h2 style="color:#d3d3d3;">GitHub Username/URL:</h2>
+            <p style="color:#d3d3d3;" class="sidebar">
+              jos-h20
+            </p>
+            <h2 style="color:#d3d3d3;">Level 2 Test for:</h2>
+            <p style="color:#d3d3d3;" class="sidebar">
+              PHP
+            </p>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-8">
+        <h2>Rules:</h2>
+        <h3>Ping Pong will count up to your number from 1 with the following exceptions:</h3>
+        <ol>
+          <li>Numbers divisible by 3 become "ping".</li>
+          <li>Numbers divisible by 5 become "pong".</li>
+          <li>Numbers divisible by 15 become "ping pong."</li>
+        </ol>
+
+        <form class="form-inline" role="form "id="pong">
+          <div class="form-group">
+            <label for="pong">Enter a number here:</label>
+            <input id="number" class="form-control" type="text">
+          </div>
+            <button type="submit" class="btn btn-default">Ping Pong!</button>
+        </form>
+
+        <div id="result">
+          <p class="list output">
+
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="navbar navbar-inverse navbar-static-bottom" role="navigation">
+    	<div class="container">
+    		<div class="navbar-text pull-left">
+    			<p>© Josh Overly.</p>
+    		</div>
+    	</div>
     </div>
   </body>
 </html>
