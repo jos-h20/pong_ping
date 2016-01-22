@@ -13,59 +13,24 @@ var output = [];
       } else {
       output.push(i);
     }
-  }
-  }
+    }
+    }
   };
 console.log(output);
 return output;
-
 };
 
 
 
+$(document).ready(function() {
+  $("form#pong").submit(function(event) {
+    var num = parseInt($("input#number").val());
+    var result = pingPong(num);
+
+    $(".output").text(result);
 
 
-
-
-//
-// if (i % 15 === 0) {
-//   output.push("ping pong");
-// } else {
-//   if(i % 5 === 0) {
-//     output.push("pong");
-//
-// } else {
-// if(i % 3 === 0) {
-// output.push("ping");
-//
-// } else {
-
-
-
-// }
-//   }
-// }
-
-
-
-
-
-
-
-//   var divThree = (num % 3 === 0);
-//     if (divThree) {
-//     return true;
-//     }
-//   var divFive = (num % 5 === 0);
-//     if (divFive) {
-//     return true;
-//
-//     }
-//   var divFifteen = (num % 15 === 0);
-//     if (divFifteen) {
-//     return true;
-//
-//     }
-//
-//   return output;
-// };
+    $("#result").show();
+    event.preventDefault();
+  });
+});
