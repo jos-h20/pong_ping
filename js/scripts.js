@@ -1,30 +1,42 @@
 var pingPong = function(num) {
 var output = [];
 
-  for(var i = num; i > 0; i--) {
-    if (i % 15 === 0) {
-      output.push("ping pong");
-    } else {
-      if(i % 5 === 0) {
-        output.push("pong");
-
-    } else {
-    if(i % 3 === 0) {
-    output.push("ping");
-
-    } else {
+  for(var i = 1; i <= num; i++) {
       output.push(i);
-      ;
     }
 
-console.log(output)
-
-
-          }
-        }
-      }
+console.log(output);
+return output;
 
 };
+
+
+
+
+
+
+
+//
+// if (i % 15 === 0) {
+//   output.push("ping pong");
+// } else {
+//   if(i % 5 === 0) {
+//     output.push("pong");
+//
+// } else {
+// if(i % 3 === 0) {
+// output.push("ping");
+//
+// } else {
+
+
+
+// }
+//   }
+// }
+
+
+
 
 
 
