@@ -16,8 +16,8 @@ var output = [];
     }
     }
   };
-  console.log(output);
-  return output;
+console.log(output);
+return output;
 };
 
 
@@ -28,6 +28,8 @@ $(document).ready(function() {
     var result = pingPong(num);
     var newResult = result.join(" *")
     $(".output").text(newResult);
+
+
     $("#result").show();
     event.preventDefault();
   });
